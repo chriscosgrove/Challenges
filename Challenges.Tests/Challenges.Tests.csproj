@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="LeetCode\" />
     <Folder Include="CoderByte\" />
     <Folder Include="CodeWars\" />
   </ItemGroup>
