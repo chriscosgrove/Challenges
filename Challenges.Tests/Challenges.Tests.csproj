@@ -29,6 +29,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\CodeWars.csproj" />
     <ProjectReference Include="..\ClassLibrary2\CoderByte.csproj" />
+    <ProjectReference Include="..\CoderByte\CoderByte.csproj" />
+    <ProjectReference Include="..\CodeWars\CodeWars.csproj" />
     <ProjectReference Include="..\LeetCode\LeetCode.csproj" />
   </ItemGroup>
 
