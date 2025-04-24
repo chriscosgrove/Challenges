@@ -1,18 +1,17 @@
-﻿using CodeWars.LeetCode;
-using NUnit.Framework;
+﻿using LeetCode;
 
-namespace CodeWars.Tests.LeetCode
+namespace Challenges.Tests.LeetCode
 {
     public class LongestSubstringWithoutRepeatingCharactersTests
     {
-        [Test]
-        [TestCase("abcabcbb", 3)]
-        [TestCase("pwwkew", 3)]
-        [TestCase("fkdjf", 4)]
-        public void Test1(string input, int lengthOfLongestSubstring)
+        [Theory]
+        [InlineData("abcabcbb", 3)]
+        [InlineData("pwwkew", 3)]
+        [InlineData("fkdjf", 4)]
+        public void LengthOfLongestSubstringTest(string input, int lengthOfLongestSubstring)
         {
             var result = LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(input);
-            Assert.AreEqual(lengthOfLongestSubstring, result);
+            Assert.Equal(lengthOfLongestSubstring, result);
         }
     }
 }

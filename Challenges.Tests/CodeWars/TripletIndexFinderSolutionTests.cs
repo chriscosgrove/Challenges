@@ -1,16 +1,14 @@
-using CodeWars.Katas;
-using NUnit.Framework;
+using CodeWars;
 
-namespace CodeWars.Tests.Katas
+namespace Challenges.Tests.CodeWars
 {
-    [TestFixture]
     public class TripletIndexFinderSolutionTests
     {
-        [Test]
+        [Fact]
         public void FindTheMiddleNumberIndex()
         {
-            Assert.AreEqual(0, TripletIndexFinderSolution.Gimme(new double[] {2, 3, 1}));
-            Assert.AreEqual(1, TripletIndexFinderSolution.Gimme(new double[] {5, 10, 14}));
+            Assert.Equal(0, TripletIndexFinderSolution.Gimme(new double[] {2, 3, 1}));
+            Assert.Equal(1, TripletIndexFinderSolution.Gimme(new double[] {5, 10, 14}));
         }
     }
 }

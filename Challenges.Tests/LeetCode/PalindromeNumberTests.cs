@@ -1,18 +1,17 @@
-﻿using CodeWars.LeetCode;
-using NUnit.Framework;
+﻿using LeetCode;
 
-namespace CodeWars.Tests.LeetCode
+namespace Challenges.Tests.LeetCode
 {
-    class PalindromeNumberTests
+    public class PalindromeNumberTests
     {
-        [Test]
-        [TestCase(121, true)]
-        [TestCase(1234, false)]
-        [TestCase(1222222221, true)]
-        public void Test1(int input, bool expected)
+        [Theory]
+        [InlineData(121, true)]
+        [InlineData(1234, false)]
+        [InlineData(1222222221, true)]
+        public void IsPalindromeTest(int input, bool expected)
         {
             var result = PalindromeNumber.IsPalindrome(input);
-            Assert.AreEqual(result,expected);
+            Assert.Equal(result,expected);
         }
     }
 }

@@ -1,15 +1,13 @@
-﻿using CodeWars.Katas;
-using NUnit.Framework;
+﻿using CodeWars;
 
-namespace CodeWars.Tests.Katas
+namespace Challenges.Tests.CodeWars
 {
-    [TestFixture]
-    internal class FindTheOddIntTests
+    public class FindTheOddIntTests
     {
-        [Test]
+        [Fact]
         public void Tests()
         {
-            Assert.AreEqual(5, FindTheOddInt.find_it(new[] {20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5}));
+            Assert.Equal(5, FindTheOddInt.find_it(new[] {20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5}));
         }
     }
 }

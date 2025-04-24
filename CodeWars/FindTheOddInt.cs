@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace CodeWars.Katas
+namespace CodeWars
 {
     public class FindTheOddInt
     {

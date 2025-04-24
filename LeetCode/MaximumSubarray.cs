@@ -2,7 +2,7 @@
 using System.IO.Enumeration;
 using System.Linq;
 
-namespace CodeWars.LeetCode
+namespace LeetCode
 {
     public class MaximumSubarray
     {

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace CodeWars.CoderByte
+namespace CoderByte
 {
     public static class LongestWordSolution
     {

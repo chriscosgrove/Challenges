@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace CodeWars.Katas
+namespace CodeWars
 {
     public class Kata
     {

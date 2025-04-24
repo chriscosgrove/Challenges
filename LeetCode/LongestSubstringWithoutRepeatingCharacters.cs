@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace CodeWars.LeetCode
+namespace LeetCode
 {
     public class LongestSubstringWithoutRepeatingCharacters
     {

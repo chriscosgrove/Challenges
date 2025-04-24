@@ -1,4 +1,4 @@
-﻿namespace CodeWars.LeetCode
+﻿namespace LeetCode
 {
     public class ListNode
     {

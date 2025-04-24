@@ -1,21 +1,20 @@
-﻿using CodeWars.LeetCode;
-using NUnit.Framework;
+﻿using LeetCode;
 
-namespace CodeWars.Tests.LeetCode
+namespace Challenges.Tests.LeetCode
 {
     public class LongestCommonPrefixTests
     {
-        [Test]
-        [TestCase(new [] {"flower", "flow", "flight"}, "fl")]
-        [TestCase(new [] {"Horn", "Beep", "Toot"}, "")]
-        [TestCase(new [] {"Barry", "Bar", "Barf"}, "Bar")]
-        [TestCase(new [] {"a"}, "a")]
-        [TestCase(new[] { "" }, "")]
-        [TestCase(new[] { "cir", "car" }, "c")]
-        public void Test1(string[] input, string expected)
+        [Theory]
+        [InlineData(new [] {"flower", "flow", "flight"}, "fl")]
+        [InlineData(new [] {"Horn", "Beep", "Toot"}, "")]
+        [InlineData(new [] {"Barry", "Bar", "Barf"}, "Bar")]
+        [InlineData(new [] {"a"}, "a")]
+        [InlineData(new[] { "" }, "")]
+        [InlineData(new[] { "cir", "car" }, "c")]
+        public void LongestCommonPrefixTest(string[] input, string expected)
         {
             var result = LongestCommonPrefix.Solution(input);
-            Assert.AreEqual(expected, result);
+            Assert.Equal(expected, result);
         }
     }
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace CodeWars.Katas
+namespace CodeWars
 {
     /// <summary>
     /// https://www.codewars.com/kata/find-the-middle-element/csharp

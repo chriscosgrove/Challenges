@@ -1,6 +1,6 @@
 using System.Collections;
 
-namespace CodeWars.Katas
+namespace CodeWars
 {
     public static class DoubleColaSolution
     {

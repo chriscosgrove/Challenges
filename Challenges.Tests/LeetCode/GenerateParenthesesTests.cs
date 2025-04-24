@@ -1,13 +1,12 @@
-﻿using CodeWars.LeetCode;
-using NUnit.Framework;
+﻿using LeetCode;
 
-namespace CodeWars.Tests.LeetCode
+namespace Challenges.Tests.LeetCode
 {
     public class GenerateParenthesesTests
     {
-        [Test]
-        [TestCase(3)]
-        public void Test1(int combinations)
+        [Theory]
+        [InlineData(3)]
+        public void GenerateParenthesesTest(int combinations)
         {
             var sut = new GenerateParentheses();
             sut.GenerateParenthesis(combinations);

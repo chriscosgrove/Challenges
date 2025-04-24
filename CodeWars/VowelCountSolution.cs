@@ -1,4 +1,4 @@
-﻿namespace CodeWars.Katas
+﻿namespace CodeWars
 {
     using System.Linq;
     /*

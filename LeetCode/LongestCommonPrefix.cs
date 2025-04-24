@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace CodeWars.LeetCode
+namespace LeetCode
 {
     public class LongestCommonPrefix
     {

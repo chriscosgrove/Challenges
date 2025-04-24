@@ -1,21 +1,19 @@
-﻿using System.Collections.Generic;
-using CodeWars.LeetCode;
-using NUnit.Framework;
+﻿using LeetCode;
 
-namespace CodeWars.Tests.LeetCode
+namespace Challenges.Tests.LeetCode
 {
     public class SwapNodesInPairsTests
     {
-        [Test]
-        [TestCaseSource(nameof(TestListNodes))]
+        [Theory]
+        [MemberData(nameof(TestListNodes))]
         public void Test1(ListNode input)
         {
           //  var result = SwapNodesInPairs.SwapPairs(input);
         }
 
-        private static IEnumerable<ListNode> TestListNodes()
+        public static IEnumerable<object[]> TestListNodes()
         {
-            yield return new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+            yield return new[] { new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4)))) };
         }
     }
 }

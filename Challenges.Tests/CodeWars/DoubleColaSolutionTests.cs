@@ -1,25 +1,23 @@
-using NUnit.Framework;
-using CodeWars.Katas;
+using CodeWars;
 
-namespace CodeWars.Tests.Katas
+namespace Challenges.Tests.CodeWars
 {
-    [TestFixture]
     public class DoubleColaSolutionTests
     {
-        [Test]
+        [Fact]
         public void Test1()
         {
             string[] names = new string[] { "Sheldon", "Leonard", "Penny", "Rajesh", "Howard" };
             int n = 1;
-            Assert.AreEqual("Sheldon",DoubleColaSolution.WhoIsNext(names, n));
+            Assert.Equal("Sheldon",DoubleColaSolution.WhoIsNext(names, n));
         }
 
-        [Test]
+        [Fact]
         public void Test2()
         {
             string[] names = new string[] { "Sheldon", "Leonard", "Penny", "Rajesh", "Howard" };
             int n = 6;
-            Assert.AreEqual("Sheldon",DoubleColaSolution.WhoIsNext(names, n));
+            Assert.Equal("Sheldon",DoubleColaSolution.WhoIsNext(names, n));
         }
     }
 }

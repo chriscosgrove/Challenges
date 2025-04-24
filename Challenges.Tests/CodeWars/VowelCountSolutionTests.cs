@@ -1,37 +1,35 @@
-﻿using System.Diagnostics;
-using NUnit.Framework;
-using static CodeWars.Katas.VowelCountSolution;
+﻿using CodeWars;
+using System.Diagnostics;
 
-namespace CodeWars.Tests.Katas
+namespace Challenges.Tests.CodeWars
 {
-    [TestFixture]
     public class SolutionTest
     {
-        [Test]
-        [TestCase(5, "abracadabra")]
-        [TestCase(6, "aie oi  e")]
-        [TestCase(0, null)]
-        [TestCase(0, "")]
+        [Theory]
+        [InlineData(5, "abracadabra")]
+        [InlineData(6, "aie oi  e")]
+        [InlineData(0, null)]
+        [InlineData(0, "")]
         public void MySolutionTests(int expectedVowelCount, string sentence)
         {
             var sw = new Stopwatch();
             sw.Start();
-            Assert.AreEqual(expectedVowelCount, GetVowelCount(sentence));
+            Assert.Equal(expectedVowelCount, VowelCountSolution.GetVowelCount(sentence));
             var timeSpent = sw.ElapsedMilliseconds;
             Debug.Print(timeSpent.ToString());
             sw.Stop();
         }
 
-        [Test]
-        [TestCase(5, "abracadabra")]
-        [TestCase(6, "aie oi  e")]
-        [TestCase(0, null)]
-        [TestCase(0, "")]
+        [Theory]
+        [InlineData(5, "abracadabra")]
+        [InlineData(6, "aie oi  e")]
+        [InlineData(0, null)]
+        [InlineData(0, "")]
         public void BestPracticeTests(int expectedVowelCount, string sentence)
         {
             var sw = new Stopwatch();
             sw.Start();
-            Assert.AreEqual(expectedVowelCount, BestPracticeSolution(sentence));
+            Assert.Equal(expectedVowelCount, VowelCountSolution.BestPracticeSolution(sentence));
             var timeSpent = sw.ElapsedMilliseconds;
             Debug.Print(timeSpent.ToString());
             sw.Stop();

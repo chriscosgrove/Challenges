@@ -1,12 +1,10 @@
-using CodeWars.Katas;
-using NUnit.Framework;
+using CodeWars;
 
-namespace CodeWars.Tests.Katas
+namespace Challenges.Tests.CodeWars
 {
-    [TestFixture]
     public class StringEndsWithSolutionTests
     {
-        private static readonly object[] SampleTestCases = {
+        public static readonly IEnumerable<object[]> SampleTestCases = [
             new object[] {"samurai", "ai", true},
             new object[] {"sumo", "omo", false},
             new object[] {"ninja", "ja", true},
@@ -22,12 +20,13 @@ namespace CodeWars.Tests.Katas
             new object[] {":-)", ":-(", false},
             new object[] {"!@#$%^&*() :-)", ":-)", true},
             new object[] {"abc\n", "abc", false},
-        };
+        ];
 
-        [Test, TestCaseSource(nameof(SampleTestCases))]
+        [Theory] 
+        [MemberData(nameof(SampleTestCases))]
         public void SampleTest(string str, string ending, bool expected)
         {
-            Assert.AreEqual(expected, StringEndsWithSolution.Solution(str, ending));
+            Assert.Equal(expected, StringEndsWithSolution.Solution(str, ending));
         }
     }
 }

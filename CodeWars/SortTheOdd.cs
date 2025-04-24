@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace CodeWars.Katas
+namespace CodeWars
 {
     public class SortTheOdd
     {

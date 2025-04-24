@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CodeWars.Katas
+namespace CodeWars
 {
     class GapInPrimes
     {

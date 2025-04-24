@@ -1,17 +1,15 @@
-using CodeWars.Katas;
-using NUnit.Framework;
+using CodeWars;
 
-namespace CodeWars.Tests.Katas
+namespace Challenges.Tests.CodeWars
 {
-    [TestFixture]
     public class KataTest
     {
-        [Test]
+        [Fact]
         public void ReverseTests()
         {
-            Assert.AreEqual(321, Kata.ReverseNumber(123));
-            Assert.AreEqual(-321, Kata.ReverseNumber(-123));
-            Assert.AreEqual(0, Kata.ReverseNumber(0));
+            Assert.Equal(321, Kata.ReverseNumber(123));
+            Assert.Equal(-321, Kata.ReverseNumber(-123));
+            Assert.Equal(0, Kata.ReverseNumber(0));
         }
     }
 }

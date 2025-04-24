@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Net.Http.Headers;
 
-namespace CodeWars.LeetCode
+namespace LeetCode
 {
     public static class CanMakeArithmeticProgressionFromSequence
     {
@@ -27,7 +27,7 @@ namespace CodeWars.LeetCode
             
 
             int gap = arr[1] - arr[0];
-            var arithSeq = arr.TakeWhile((a, i) => (i + 1 < arr.Length) && (arr[i + 1] - a == gap));
+            var arithSeq = arr.TakeWhile((a, i) => i + 1 < arr.Length && arr[i + 1] - a == gap);
             return arithSeq.Count() == arr.Length - 1 ? true : false;
 
             //var orderedList = arr.OrderByDescending(i => i).ToArray();
