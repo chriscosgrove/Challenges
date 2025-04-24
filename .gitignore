@@ -12,6 +12,10 @@
 *.user
 *.sln.docstates
 
+/.vs
+
+.vs
+
 # Build results
 [Dd]ebug/
 [Rr]elease/
@@ -223,3 +227,4 @@ project.lock.json
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
+/.vs/*
