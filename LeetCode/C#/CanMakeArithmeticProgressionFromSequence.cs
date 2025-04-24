@@ -1,8 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Net.Http.Headers;
-
-namespace LeetCode
+﻿namespace LeetCode
 {
     public static class CanMakeArithmeticProgressionFromSequence
     {
